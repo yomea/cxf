@@ -30,7 +30,7 @@ public class WSCxfJAX {
 		jsfb.setAddress("http://localhost:8888/ws");
 		//添加请求到达时的日志拦截器
 		jsfb.getInInterceptors().add(new LoggingInInterceptor());
-		//添加放回数据时的日志拦截器
+		//添加返回数据时的日志拦截器
 		jsfb.getOutInterceptors().add(new LoggingOutInterceptor());
 
 		jsfb.create();
